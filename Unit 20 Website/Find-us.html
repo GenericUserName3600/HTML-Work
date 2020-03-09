@@ -1,0 +1,128 @@
+<html>
+        <head>
+            <title> Unit 20 - Find Us Page </title>
+            <meta charset = "utf-8">
+            <meta http-equiv="X-UA-Compatilbe" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+            <link href="Styles/Menustyles.css" type="text/css" rel="stylesheet">
+            <script src="Scripts.myscripts.js" type="text/javascript"></script>
+            <script src="Scripts/basiccalendar.js" type="text/javascript"></script>
+            <link href="Styles/MainStyles.css" type="text/css" rel="stylesheet" />
+        </head>
+        <body>
+            <div id="pagewrapper">
+                <div id="header">
+                   <h1>S & W Product Solutions: Find Us Page.</h1> 
+                </div>
+                <div id="navigationbar2">
+                    <nav class="animenu">
+                        <button class="animenu_toggle">
+                            <span class='animenu_toggle_bar'></span>
+                            <span class="animenu_toggle_bar"></span>
+                            <span class="animenu_toggle_bar"></span>
+                        </button>
+                        <ul class="animenu__nav">
+                                <li>
+                                    <a href="http://localhost/Unit%2020%20Website/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/Unit%2020%20Website/Products.html"> Products </a>
+                                </li>     
+                                <li>
+                                    <a href="http://localhost/Unit%2020%20Website/Find-us.html"> Find us </a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/Unit%2020%20Website/About%20us.html"> About us</a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost/Unit%2020%20Website/Contact-us.html"> Contact us</a>
+                                </li>  
+                                <li>
+                                    <a href ="http://localhost/Unit%2020%20Website/Terms&Conditions.html"> Terms and Conditions</a>
+                                </li>                          
+                            </ul>
+                    </nav>
+                </div>
+                <div id="maincontent">
+                        <div id="RightBox"class="MainContentBoxes">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.336545257898!2d-1.9156731845946076!3d52.52734484343793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870a339deeb84c9%3A0xcb6489dc522eb3f0!2s92+Derrydown+Rd%2C+Birmingham+B42+1RT!5e0!3m2!1sen!2suk!4v1510321662760" width="1275" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>           
+                         </div>
+                         <div class="Cleardiv">
+                         </div> 
+                         <div class="container">
+                            <div class="row">
+                                <div class="col-md-3" style="background-color: #d3d3d3;">
+                                    <p>
+                                        Address:
+                                        97 Makeshift Road,
+                                        Great Barr,
+                                        Birmingham,
+                                        B42 16T                                
+                                    </p>
+                                </div>
+                                <div class-"col-sm-1" style="background-color: white;"></div>
+                                <div class="col-md-3" style="background-color: #d3d3d3;">
+                                    <P>
+                                            Po-box Location:
+                                            89 Complained Avenue,
+                                            Great Barr,
+                                            Birmingham,
+                                            B42 9YU
+                                    </P>
+                                </div>
+                            </div>
+                         </div>
+                </div>
+                <div id="sidebar">
+                    <script type=text/javascript>
+                        var todaydate=new Date()
+                        var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+                        var curyear=todaydate.getFullYear() //get current year
+                        document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1));  
+                    </script>
+                    <script type="text/javascript">
+                        var curday=todaydate.getDay();
+                        if(curday==0)
+                        {
+                            document.writeln("<h1> Sunday </h1>")
+                            document.writeln("<p> We are currently closed. </p>")
+                        }
+                        if(curday==1)
+                        {
+                            document.writeln("<h1> Monday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-17:00pm. </p>")
+                        }
+                        if(curday==2)
+                        {
+                            document.writeln("<h1> Tuesday </h1>")
+                            document.writeln("<p> We are currently closed. </p>")
+                        }
+                        if(curday==3)
+                        {
+                            document.writeln("<h1> Wednesday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                        }
+                        if(curday==4)
+                        {
+                            document.writeln("<h1> Thursday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                        }
+                        if(curday==5)
+                        {
+                            document.writeln("<h1> Friday </h1>");
+                            document.writeln("<p>We are open from <br> 9:00am-17:00pm </p>");
+                        }
+                        if(curday==6)
+                        {
+                            document.writeln("<h1> Saturday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                        }
+                        </script>
+                </div>
+                <div id="footer">
+                    <h1> S & W Solutions</h1>
+                </div>
+            </div>
+        </body>
+    </html>

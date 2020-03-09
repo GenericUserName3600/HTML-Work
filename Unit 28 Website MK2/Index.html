@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <title> InTheZone ~ Home Page</title>
+        <!-- Links and Meta Setting for the HTML page-->
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatilbe" content="IE=edge"> <!-- Indentifying the type of browser in use by the cutomser. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Identifying the size of the user's screen and adjusting-->
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> <!-- Linking to a external Sheet-->
+        <link href="Styles/Menustyles.css" type="text/css" rel="stylesheet"> <!-- Linking to the menu style sheet-->
+        <script src="Scripts.myscripts.js" type="text/javascript"></script> <!--Linking to the main scripts sheet-->
+        <script src="Scripts/basiccalendar.js" type="text/javascript"></script> <!-- Linking to the basic calendar sheet-->
+        <link href="Styles/MainStyles.css" type="text/css" rel="stylesheet" /> <!-- Linking to the main stlye sheet-->
+        <link href="Styles/CalendarStyle.css" type="text/css" rel="stylesheet"/> <!-- Linking to the calendar stlye sheet-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    </head>
+    <!-- Main section for the HTML Page-->
+    <body>
+        <div id="pagewrapper">
+            <div class="header"> <!-- Header section of the page-->
+               <h1>InTheZone ~ Home Page</h1> 
+            </div>
+            <div id="navigationbar2"> <!-- Navigation Bar.-->
+                <div id="navigationbar2">
+                        <nav class="animenu">
+                                <!--<button class="animenu_toggle">
+                                    <span class='animenu_toggle_bar'></span>
+                                    <span class="animenu_toggle_bar"></span>
+                                    <span class="animenu_toggle_bar"></span>
+                                </button>-->
+                                <ul class="animenu__nav">
+                                        <li>
+                                            <a href="http://localhost/Unit%2028%20Website%20MK2/">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://localhost/Unit%2028%20Website%20MK2/products.html"> Products </a>
+                                        </li>     
+                                        <li>
+                                            <a href="http://localhost/Unit%2028%20Website%20MK2/Find-us.html"> Find us </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://localhost/Unit%2028%20Website%20MK2/About-us.html"> About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://localhost/Unit%2028%20Website%20MK2/Contact-us.html"> Contact us</a>
+                                        </li>    
+                                        <li>
+                                            <a href ="http://localhost/Unit%2028%20Website%20MK2/Terms&Conditions.html"> Terms and Conditions </a>
+                                        </li>                        
+                                    </ul>
+                            </nav>
+                    </div>
+            <div id="sidebar"> <!-- CCalendar and Opening Times Location-->
+                <script type=text/javascript>
+                    var todaydate=new Date() /*/ Gaines Today's date from the user's system /*/
+                    var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+                    var curyear=todaydate.getFullYear() //get current year
+                    document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1)); /*/ Produced the dates into a table/*/
+                </script>
+                <script type="text/javascript"> /*/ Script used to define when the shop is open/*/
+                    var curday=todaydate.getDay(); 
+                    if(curday==0) /*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Sunday </h1>")
+                        document.writeln("<p> We are currently closed. </p>")
+                    }
+                    if(curday==1)/*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Monday </h1>")
+                        document.writeln("<p> We are open from <br> 9:00am-17:00pm. </p>")
+                    }
+                    if(curday==2)/*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Tuesday </h1>")
+                        document.writeln("<p> We are currently closed. </p>")
+                    }
+                    if(curday==3)/*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Wednesday </h1>")
+                        document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                    }
+                    if(curday==4)/*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Thursday </h1>")
+                        document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                    }
+                    if(curday==5)/*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Friday </h1>");
+                        document.writeln("<p>We are open from <br> 9:00am-17:00pm </p>");
+                    }
+                    if(curday==6)/*/ Checking against whether the date equals a certain number/*/
+                    {
+                        document.writeln("<h1> Saturday </h1>")
+                        document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                    }
+                    </script>
+            </div>
+            <div id="maincontent"> <!-- Main Content area of the HTML page.-->
+                <div class="container"> <!-- Used for the storing of the rows on the HTML page.-->
+                    <div class="row"> <!-- Using the different rows of the HTML page-->
+                        <div class="col-sm-12" style="background-color: #ffffff"> <!-- Making of a column for the HTML Page-->
+                           <h1> Welcome to the InTheZone Home page. </h1>
+                        </div>
+                        <div class="col-sm-12" style="background-color: #ffffff"> <!-- Heading for the HTML page.-->
+                            <p>Here, we aim to provide low cost games while also promoting new or existing game developers.</p>
+                        </div>
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                       
+                    </div>  
+                    <div class="row"> <!-- Making of a column for the HTML Page-->
+                        <div class="col-md-3" style="background-color: white;">  <!-- Used for the storage of the image on the HTML page-->
+                            <img src ="Fallout_4.png" class="img-rounded" alt="Fallout_4" width="275" height="200">
+                        </div>
+                        <div class="col-sm-1" style="background-color: White;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: white;">  <!-- Used for the storage of the image on the HTML page-->
+                            <img src="Stellaris.png" class="img-rounded" alt="Stellaris" width="275" height="200    ">
+                        </div>
+                        <div class="col-sm-1" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: white;">  <!-- Used for the storage of the image on the HTML page-->
+                            <img src="Sims_3Mk2.png" class="img-rounded" alt="Outrider" width="275" height="200">
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Making of a column for the HTML Page-->
+                        <div class="col-md-3" style="background-color: #ffffff;">  <!-- Used for the descriping of the image.-->
+                            <h5> Fallout 4 </h5>
+                        </div>
+                        <div class="col-sm-1" style="background-color: White;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: #ffffff;"> <!-- Used for the descriping of the image.-->
+                            <h5> Stellaris </h5>
+                        </div>
+                        <div class="col-sm-1" style="background-color: White;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: #ffffff;"> <!-- Used for the descriping of the image.-->
+                            <h5> The Sims 3 </h5>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Using the different rows of the HTML page-->
+                        
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                       
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-3" style="background-color: white;">  <!-- Used for the storage of the image on the HTML page-->
+                            <img src ="Civilization_5.png" class="img-rounded" alt="Civilization_5" width="275" height="200">
+                        </div>
+                        <div class="col-sm-1" style="background-color: White;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: white;">  <!-- Used for the storage of the image on the HTML page-->
+                            <img src="Dawn_Of_War_3.png" class="img-rounded" alt="Stellaris" width="275" height="200    ">
+                        </div>
+                        <div class="col-sm-1" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: white;">  <!-- Used for the storage of the image on the HTML page-->
+                            <img src="Banished.png" class="img-rounded" alt="Outrider" width="275" height="200">
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Making of a column for the HTML Page-->
+                        <div class="col-md-3" style="background-color: #ffffff;">  <!-- Used for the descriping of the image.-->
+                            <h5> Civilization 5 </h5>
+                        </div>
+                        <div class="col-sm-1" style="background-color: White;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: #ffffff;"> <!-- Used for the descriping of the image.-->
+                            <h5> Dawn Of War 3 </h5>
+                        </div>
+                        <div class="col-sm-1" style="background-color: White;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-md-3" style="background-color: #ffffff;"> <!-- Used for the descriping of the image.-->
+                            <h5> Banished </h5>
+                    </div>
+                    <div class="row"> <!-- Using the different rows of the HTML page-->  
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->   
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        
+                    </div> 
+                    <div class="row">
+                        <div class="col-sm-12" style="background-color: #ffffff;"> <!-- Used for the descriping of the image.-->
+                            <h5> Recent Game Developer News. </h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6" style="background-color: #ffffff;">
+                                <img src ="Paradox_Interactive.png" class="img-rounded" alt="Paradox_Interactive" width="275" height="200">   
+                                
+                        </div>   
+                        <div class="col-md-4" style="background-color: #ffffff;">
+                            <p> Paradox Interactive, known for such games and Hearts of Iron 4 and Stellaris, has recently announced a 
+                                new DLC pack for Stellaris, called Apocalypse. In this new DLC pack, players now gain access to Weapons of galaxtic destruction.
+                                Meaning that they can now finally finish and completely destory that annoying empire next to them.
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="row"> <!-- Using the different rows of the HTML page-->
+                        
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                        
+                    </div>
+                                                            
+                    <div class="row">
+                            <div class="col-md-6" style="background-color: #ffffff;">
+                                    <img src ="EA_Logo.png" class="img-rounded" alt="EA_Logo" width="275" height="200">   
+                                    
+                            </div>   
+                            <div class="col-md-4" style="background-color: #ffffff;">
+                                <p> EA or Electronic Arts, known for the Battlefield Franchise and Star Wars Battlefront, has recently been in the News
+                                    regarding their loot box system and how countries are starting to identify this as gambling. EA released a statement
+                                    suggesting that loot boxes are only loot boxes and could no way be considered as gambling.
+                                </p>
+                            </div>
+                        </div> 
+                    <div class="row"> <!-- Using the different rows of the HTML page-->
+                        
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->
+                    <div class="col-sm-12" style="background-color: white;"></div> <!-- Adding a divide into the page-->   
+                </div> 
+                </div>
+            </div>
+            <div id="footer"> <!-- The footer / ending of the page-->
+                <h1> InTheZone ~ Home Page</h1>
+            </div>
+        </div>
+    </body>
+</html>

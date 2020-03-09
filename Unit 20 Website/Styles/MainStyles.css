@@ -1,0 +1,125 @@
+#pagewrapper
+{ 
+    width:100%;
+}
+
+.MainContentBoxes
+{
+    width:70%;
+    float: left;
+    text-align: center;
+}
+.cleardiv
+{
+    width:20%;
+    clear: both;
+}
+
+#header
+{
+    width:100%;
+    background-color: #559999;
+    color: #ffffff;
+    text-align: center;
+
+}
+#navigationbar
+{
+    width:15%;
+    background-color:#ffffff;
+    color:#599999; 
+    float: left;
+    text-align: center;
+}
+#maincontent
+{
+    width:85%;
+    float: left;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+#sidebar
+{
+    width:15%;
+    background-color:#ffffff;
+    color:#000000; 
+    float: left;
+    text-align: center;
+}
+/*#sidebar2
+{
+    width:15%;
+    background-color:#ffffff;
+    color:#000000; 
+    float: left;
+    text-align: center;
+}
+#MainContent2
+{
+    width:85%;
+    float: left;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+#MainContent3
+{
+    width:85%;
+    float: left;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+#MainContent4
+{
+    width:85%;
+    float: left;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}*/
+#footer
+{
+    width:100%;
+    background-color: #559999;
+    color: #ffffff;
+    text-align: center;
+    clear:both;
+}
+body
+{
+    margin: 0px;
+}
+
+/* Calender program.*/
+
+.main {
+width:200px;
+border:1px solid black;
+}
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:white;
+}
+
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: lightyellow;
+padding: 2px;
+}
+
+.days #today{
+font-weight: bold;
+color: red;
+}

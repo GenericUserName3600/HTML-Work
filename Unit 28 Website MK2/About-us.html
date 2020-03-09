@@ -1,0 +1,118 @@
+<html>
+        <head>
+            <title>InTheZone ~ About us </title>
+            <meta charset = "utf-8">
+            <meta http-equiv="X-UA-Compatilbe" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+            <link href="Styles/Menustyles.css" type="text/css" rel="stylesheet">
+            <script src="Scripts.myscripts.js" type="text/javascript"></script>
+            <script src="Scripts/basiccalendar.js" type="text/javascript"></script>
+            <link href="Styles/MainStyles.css" type="text/css" rel="stylesheet" />
+            <link href="Styles/CalendarStyle.css" type="text/css" rel="stylesheet"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+            <div id="pagewrapper">
+                <div class="header">
+                   <h1>InTheZone ~ About Us Page.</h1> 
+                </div>
+                <div id="navigationbar2">
+                    <nav class="animenu">
+                        <!--<button class="animenu_toggle">
+                            <span class='animenu_toggle_bar'></span>
+                            <span class="animenu_toggle_bar"></span>
+                            <span class="animenu_toggle_bar"></span>
+                        </button>-->
+                        <ul class="animenu__nav">
+                            <li>
+                                <a href="http://localhost/Unit%2028%20Website%20MK2/">Home</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Unit%2028%20Website%20MK2/products.html"> Products </a>
+                            </li>     
+                            <li>
+                                <a href="http://localhost/Unit%2028%20Website%20MK2/Find-us.html"> Find us </a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Unit%2028%20Website%20MK2/About-us.html"> About us</a>
+                            </li>
+                            <li>
+                                <a href="http://localhost/Unit%2028%20Website%20MK2/Contact-us.html"> Contact us</a>
+                            </li>    
+                            <li>
+                                <a href ="http://localhost/Unit%2028%20Website%20MK2/Terms&Conditions.html"> Terms and Conditions </a>
+                            </li>                        
+                        </ul>
+                    </nav>
+                            </div>
+                <div id="maincontent">
+                   <h1> ~ About InTheZone ~</h1>
+                   <p> InTheZone is a website and game distribution company that aims to provide high quailty and affordable games
+                       straight from the developer themsevles, and thus cutting out the middle man. We are a small team af about 200
+                       employees based in and around london, Uk. 
+                   </p>
+                   <p> 
+                       We provide mostly strategy and action games due to those genres being the most popular between our staff and 
+                       customer base. Some examples of these games would be Stellaris, Dawn Of War 3 and Civilization 5.
+                   </p>
+                   <p>
+                       As stated above, we are a small team that works in andn around London, Uk. However, we also operate in the US and the Eastern side of 
+                       the world in order to bring these games and these prices all over the world. 
+                   </p>
+                </div>
+                <div id="sidebar">
+                    <script type=text/javascript>
+                        var todaydate=new Date()
+                        var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+                        var curyear=todaydate.getFullYear() //get current year
+                        document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1));  
+                    </script>
+                    <script type="text/javascript">
+                        var curday=todaydate.getDay();
+                        if(curday==0)
+                        {
+                            document.writeln("<h1> Sunday </h1>")
+                            document.writeln("<p> We are currently closed. </p>")
+                        }
+                        if(curday==1)
+                        {
+                            document.writeln("<h1> Monday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-17:00pm. </p>")
+                        }
+                        if(curday==2)
+                        {
+                            document.writeln("<h1> Tuesday </h1>")
+                            document.writeln("<p> We are currently closed. </p>")
+                        }
+                        if(curday==3)
+                        {
+                            document.writeln("<h1> Wednesday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                        }
+                        if(curday==4)
+                        {
+                            document.writeln("<h1> Thursday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                        }
+                        if(curday==5)
+                        {
+                            document.writeln("<h1> Friday </h1>");
+                            document.writeln("<p>We are open from <br> 9:00am-17:00pm </p>");
+                        }
+                        if(curday==6)
+                        {
+                            document.writeln("<h1> Saturday </h1>")
+                            document.writeln("<p> We are open from <br> 9:00am-16:00pm. </p>")
+                        }
+                        </script>
+                </div>
+                <div id="footer">
+                    <h1> InTheZone ~ About Us Page.</h1>
+                </div>
+            </div>
+        </body>
+    </html>
