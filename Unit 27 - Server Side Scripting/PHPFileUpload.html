@@ -1,0 +1,15 @@
+<html>
+    <!-- The following html page is the interface for the uploading of files onto a server.
+        With this HTML interafce, a user would be unable to upload any files, nor 
+        would the script be able to run effectively. -->
+   <head>
+
+   </head>
+   <body>
+       <form action = "PHPFileUploadScript.php" method="post" enctype="multipart/form-data">
+           <label for="file">Filename:</label> <!-- Defining a name for the upload point. -->
+           <input type="file" name="fileuploader" id="file"/><br> <!-- Assinging the type of file upload point -->
+           <input type="submit" name="submit" value="Submit"/> <!-- Assinging the submission button -->
+       </form>
+   </body>
+</html>

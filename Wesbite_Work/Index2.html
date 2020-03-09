@@ -1,0 +1,141 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CS15020 - Web Development</title>
+  <base href="/">
+  <meta name="token" content="{{ request.params['__RequestVerificationToken'] }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This stylesheet includes free icons, just fyi: FONTAWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <div class="container-fluid">
+    <div class="content-card">
+      <div class="content-inner">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12" align="center">
+              <h1>CS15020: Index Page</h1>
+			  <p>Website created during practicals for CS15020</p>
+            </div>
+			<div id="content-section">
+				<ul>
+				  <li><a class="active" href="#home">Home</a></li>
+				  <li><a href="#news">News</a></li>
+				  <li><a href="#contact">Contact</a></li>
+				  <li><a href="#about">About</a></li>
+				</ul>
+			</div>
+            <div class="col-md-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus massa id ultricies suscipit.
+                Sed placerat tortor orci, sit amet maximus augue imperdiet non. In a odio velit. Curabitur eu tellus ac
+                sem rhoncus sagittis in vel sapien. Pellentesque convallis lobortis lorem sed blandit. Vestibulum eu
+                sollicitudin dui, in ultrices turpis. Aliquam lacinia lectus nibh, a lobortis risus luctus id.
+                Vestibulum vitae scelerisque lectus, et dignissim enim. Ut euismod tellus eget dignissim luctus. Mauris
+                aliquet, eros ut accumsan tempor, mi ipsum dapibus nisi, sit amet elementum ipsum magna eget tellus. Sed
+                commodo efficitur elementum. Vestibulum lacus nisi, rhoncus ac eros quis, mollis lacinia enim.
+              </p>
+              <p>
+                Duis mollis eleifend tellus, nec euismod neque vulputate sed. Nullam id ex congue, maximus justo quis,
+                pulvinar nulla. Phasellus gravida dui sit amet urna sagittis, vitae viverra arcu viverra. Morbi mollis
+                odio nibh, id rhoncus justo feugiat non. Maecenas placerat egestas risus id consequat. Fusce fringilla
+                sapien non ex bibendum, sit amet pretium urna suscipit. Donec auctor elit vitae tincidunt interdum. Sed
+                egestas, nunc eget laoreet accumsan, velit erat facilisis tellus, eget vestibulum purus neque vitae
+                nunc. Phasellus ac magna a diam mollis dignissim mollis id orci. Sed pharetra aliquet porttitor.
+                Phasellus at eleifend est. Donec tristique eu erat ut tempus. Donec tellus eros, convallis sed leo
+                convallis, egestas feugiat enim. Proin cursus est eu nunc dapibus interdum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F8F8F8;
+  }
+
+  .bg-image {
+    background-image: url(https://images.unsplash.com/photo-1555985202-12975b0235dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80);
+    margin: 0;
+    background-size: cover;
+    display: flex;
+    min-height: 70%;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: "futura-pt", sans-serif;
+    border-radius: 0 !important;
+  }
+
+  .container-fluid {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+  }
+
+  .content-card {
+    margin-top: -75%;
+  }
+
+  .content-inner {
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content {
+    padding: 7rem 7rem 0 7rem;
+    font-size: 1.6rem;
+    max-width: 850px;
+    background: rgba(255, 255, 255, 1);
+    min-height: 500px;
+    height: fit-content;
+    margin: 15rem auto 7rem auto;
+  }
+  #content-section{
+	background-color: #ffffff;
+	box-shadow: 4px 4px 4px rgba(50, 50, 50, 0.75);
+	margin-top: -18px;
+	width: 700px;
+	opacity: 0.75;
+	padding: 1px ;
+	height: 100px;
+}
+#content-section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; 
+}
+
+#content-section li {
+  float: left;
+}
+
+#content-section li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#content-section li a:hover {
+  background-color: #111;
+}
+</style>

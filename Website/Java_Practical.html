@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang ="en-GB">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		<title> CS15020 Practical 4-5: Java Practical</title>
+	</head>
+	<body>
+		<div id = "pagewrapper">
+			<div id ="header">
+				<h1>CS15020: Index Page</h1>
+				<p>Website created during practicals for CS15020</p>
+			</div>
+			<div class="w3-bar w3-black">
+			  <a href="http://users.aber.ac.uk/sec26/Website/New_Index.html" class="w3-bar-item w3-button">Home</a>
+			  <a href="http://users.aber.ac.uk/sec26/Website/CV.html" class="w3-bar-item w3-button">My CV</a>
+			  <a href="http://users.aber.ac.uk/sec26/cs15020/prac1.html" class="w3-bar-item w3-button"> Mystery Link</a>
+			  <a href="http://users.aber.ac.uk/sec26/Website/Java_Practical.html" class="w3-bar-item w3-button"> Java Form </a>
+			  <a href="http://users.aber.ac.uk/sec26/Website/about.html" class="w3-bar-item w3-button">About Page</a>
+			</div>
+		</div>
+		<form id="form" style="font-size: 20px;">
+		<p>Your name: <input type="text" name="fname" id="name"></p>
+		<p>Desired mark: <input type="range" min="0" max="5" value="0" id="range"></p>
+		<p style="font-size:15px;">Value: <span id="demo"></span></p>
+		<input type="button" onclick="onceSubmit()" value="Submit"><br><br>
+		</form>
+		
+		<p id="secret"></p>
+		<p id="otherSecret"></p>
+		
+		<script>
+		<!-- // Oh no! Comments 
+		
+		 var date = new Date(document.lastModified).toLocaleString();
+		 document.write(date);
+		 
+		 // -->
+		 </script>
+		 
+		<script>
+		<!-- // Oh no! Comments 
+		
+		var slider = document.getElementById("range");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+		output.innerHTML = this.value;
+		}
+		
+		// -->
+		</script>
+		
+		<script>
+		
+		<!-- // Oh no! Comments 
+		
+		function onceSubmit() {
+			var nameElem = document.getElementById("name");
+			var rateElem = document.getElementById("range");
+			var day = new Date();
+			var hr = day.getHours();
+			
+			if (hr > 0 && hr < 6) {
+			document.getElementById("secret").innerHTML =("It's time to sleep, " + nameElem.value);
+			}
+			if (hr > 5 && hr < 12) {
+			document.getElementById("secret").innerHTML =("Good Morning, " + nameElem.value);
+			}
+		   if (hr > 11 && hr < 18) {
+			document.getElementById("secret").innerHTML =("Good Afternoon, " + nameElem.value);
+			}
+			if (hr > 17 && hr < 22) {
+			document.getElementById("secret").innerHTML =("Good Evening, " + nameElem.value);
+			}
+			if (hr > 21 && hr < 1) {
+			document.getElementById("secret").innerHTML =("Sleep Well, " + nameElem.value);
+			}
+			
+			if (rateElem.value == 0) {
+			document.getElementById("otherSecret").innerHTML =("0%? You gotta be kidding me!");
+			}
+			if(rateElem.value == 1) {
+				document.getElementById("otherSecret").innerHTML =("20%? How did this happen?");
+			}
+			if(rateElem.value == 2) {
+				document.getElementById("otherSecret").innerHTML =("40%? You can do better!");
+			}
+			if(rateElem.value == 3) {
+				document.getElementById("otherSecret").innerHTML =("60! Not bad!");
+			}
+			if(rateElem.value == 4) {
+				document.getElementById("otherSecret").innerHTML =("80%! That's really good!");
+			}
+			if(rateElem.value == 5) {
+				document.getElementById("otherSecret").innerHTML =("100%! W O W!");
+			}
+		}
+		// --!>
+		</script> 
+	</body>
+</html>

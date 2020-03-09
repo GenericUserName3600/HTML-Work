@@ -1,0 +1,10 @@
+*Republic At War code : sweaw MODPATH=mods\raw
+*Thrawns Revenge code : MODPATH=mods\Imperial_Civil_War
+*Clone wars : swfoc MODPATH=Mods\star_wars_clone_wars_iV
+
+
+https://en.wikipedia.org/wiki/BIOS
+http://computer.howstuffworks.com/power-supply1.htm
+ttps://en.wikipedia.org/wiki/Motherboard#Bootstrapping_using_the_Basic_input_output_system
+Milad.Dezaki@bmetc.ac.uk
+PQT8W-68YB2-MPY6C-9JV9X-42WJV

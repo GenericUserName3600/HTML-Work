@@ -1,0 +1,42 @@
+#pagewrapper
+{
+	width:100%;
+	margin: 0px;
+}
+#header
+{
+	width:100%;
+	background-color: #559999;
+	color: #ffffff;
+	text-align: center;
+}
+html{
+	height: 100%;
+	margin:0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width:100%;
+  margin: 0;
+  min-height:100%;
+  text-align: center;
+}
+
+p.dotted
+{
+	border-style: dotted;
+}
+
+
+.main {
+  font-size: 17px; /* Increased text to enable scrolling */
+  padding: 0px 0px;
+  background-color: #8E8588;
+  margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
